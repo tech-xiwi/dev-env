@@ -1,0 +1,26 @@
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+[alias]
+        co = checkout
+        br = branch
+        ci = commit
+        st = status
+        unstage = reset HEAD --
+        last = log -1 HEAD
+
+[gitflow "prefix"]
+        hotfix = "hotfix/"
+        feature = "feature/"
+        bugfix = "bugfix/"
+        release = "release/"
+        support = "support/"
+        versiontag = "v"
+[gitflow "branch"]
+        master = master
+        develop = develop
+[user]
+	email = xxxx@xx.com
+	name = xxx
