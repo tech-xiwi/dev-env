@@ -1,0 +1,36 @@
+[color]
+	ui = auto
+[user]
+	name = tech-xiwi
+	email = xiwi92@hotmail.com
+[alias]
+	ci = commit
+	st = status
+	br = branch -v
+	co = checkout
+	uncommit = reset --soft HEAD^
+	br = branch
+	co = checkout
+	g = grep -n --color -E
+	l = log --pretty=oneline --abbrev-commit --graph --decorate
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit
+    last = log -1 HEAD
+    unstage = reset HEAD --
+	# Handy shortcuts for rebasing
+	rc = rebase --continue
+	rs = rebase --skip
+	ra = rebase --abort
+[push]
+	default = simple
+[core]
+    quotepath = false
+[gitflow "prefix"]
+        hotfix = "hotfix/"
+        feature = "feature/"
+        bugfix = "bugfix/"
+        release = "release/"
+        support = "support/"
+        versiontag = "v"
+[gitflow "branch"]
+        master = master
+        develop = develop
