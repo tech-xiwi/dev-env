@@ -1,6 +1,6 @@
 #!/bin/sh
 sudo apt update && sudo apt upgrade -y
-sudo apt install conky-all tmux git-flow git-lfs xfonts-utils -y
+sudo apt install conky-all tmux git-flow git-lfs xfonts-utils colormake -y
 fc-cache -fv
 
 CONFIG_HOME=~/dev-env
